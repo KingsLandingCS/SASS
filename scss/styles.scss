@@ -36,11 +36,19 @@ body {
   margin: 0 auto;
 
 
-  #{&}-paragraph {
+  #{&}-paragraph-1 {
     font-weight: weight(bold);
 
     &:hover {
       color: pink;
+    }
+  }
+
+  #{&}-paragraph-2 {
+    @extend .main-paragraph-1;
+
+    &:hover {
+      color: $accent-color;
     }
   }
 
